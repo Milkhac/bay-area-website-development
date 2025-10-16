@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Is your website accessible? Learn the crucial SEO and legal risks of ignoring WCAG compliance. Protect your brand, boost rankings, and book a compliance audit today.">
+    <meta name="title" content="WCAG Compliance: SEO & Legal Risks">
+    <title>WCAG Compliance: SEO & Legal Risks</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for custom gradient text -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1e293b',
+                        'primary-light': '#f8fafc',
+                        'accent-start': '#4f46e5', // Indigo-600
+                        'accent-end': '#d946ef',   // Fuchsia-600
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Use Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1f2937; /* Dark text for high contrast */
+        }
+        /* Custom class for the huge gradient heading */
+        .gradient-text-huge {
+            background-image: linear-gradient(to right, theme('colors.accent-start'), theme('colors.accent-end'));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* Ensure text is huge */
+            font-size: 3rem; /* sm: 4xl */
+            line-height: 1;
+        }
+        @media (min-width: 640px) {
+            .gradient-text-huge {
+                font-size: 5rem; /* md: 6xl */
+            }
+        }
+        @media (min-width: 1024px) {
+            .gradient-text-huge {
+                font-size: 6.5rem; /* lg: 7xl */
+            }
+        }
+        /* Accessibility: ensure focus states are clearly visible */
+        button, a {
+            transition: all 0.2s;
+        }
+        button:focus, a:focus {
+            outline: 3px solid theme('colors.accent-start');
+            outline-offset: 4px;
+            border-radius: 0.5rem;
+        }
+
+        /* Icon SVG Path (using Lucide icons) */
+        .icon-size { width: 1.75rem; height: 1.75rem; }
+    </style>
+</head>
+<body class="bg-primary-light min-h-screen">
+    <!-- Skip to main content link (ADA essential) -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-accent-start text-white p-3 z-50 rounded-lg">Skip to main content</a>
+
+    <header class="shadow-sm bg-white/70 backdrop-blur-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-xl font-extrabold text-primary-dark tracking-tighter">
+                Kha Creation
+            </div>
+            <nav>
+                <!-- Simple button for navigation, since this is a one-page artifact -->
+                <a href="#audit-cta" class="text-sm font-medium text-accent-start hover:text-accent-end p-2 rounded-lg">Get Audit</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="pt-12 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+
+        <!-- HERO SECTION -->
+        <section class="text-center mb-16">
+            <h1 class="gradient-text-huge font-extrabold mb-6 tracking-tight">
+                Is Your Website WCAG Compliant?
+            </h1>
+            <p class="max-w-4xl mx-auto text-xl text-gray-700 font-medium">
+                The Hidden <span class="text-accent-start font-bold">SEO & Legal Risks</span> You Can’t Ignore
+            </p>
+        </section>
+
+        <!-- TL;DR SECTION -->
+        <section class="mb-16 p-8 bg-white shadow-xl rounded-2xl border-l-4 border-accent-start/80">
+            <h2 class="text-3xl font-bold text-primary-dark mb-4 sr-only">TL;DR Summary</h2>
+            <div class="flex items-start space-x-4">
+                <span class="text-4xl text-accent-start font-extrabold pt-1">💡</span>
+                <p class="text-lg leading-relaxed text-gray-800">
+                    If your website isn’t **WCAG (Web Content Accessibility Guidelines) compliant**, you could be losing customers, risking lawsuits, and damaging your SEO. WCAG compliance isn’t just about accessibility—it’s about growth, reputation, and future-proofing your business. A professional **WCAG Compliance Audit** can help you identify accessibility gaps, improve user experience, and boost your Google rankings.
+                </p>
+            </div>
+        </section>
+
+        <!-- WCAG MEANING SECTION -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-extrabold text-primary-dark mb-8 text-center sm:text-left">
+                What Does WCAG Compliance <span class="text-accent-start">Really Mean?</span>
+            </h2>
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <p class="text-lg leading-loose text-gray-800">
+                    Imagine visiting a website where buttons aren’t labeled, text is too small to read, and images have no descriptions. For millions of users with disabilities, that’s an everyday reality.
+                </p>
+                <p class="text-lg leading-loose text-gray-800 mt-4">
+                    **WCAG (Web Content Accessibility Guidelines)** ensure that websites are accessible to everyone, including people with visual, auditory, cognitive, and motor impairments. It’s not a luxury—it’s a legal and ethical responsibility for all digital businesses.
+                </p>
+            </div>
+        </section>
+
+        <!-- WHY IT MATTERS SECTION -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-extrabold text-primary-dark mb-10 text-center">
+                Why WCAG Compliance <span class="text-accent-end">Matters More Than You Think</span>
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Point 1: Legal -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-start border-t-4 border-red-500 hover:shadow-2xl transition duration-300">
+                    <div class="p-3 bg-red-100 text-red-600 rounded-full mb-3">
+                        <!-- Scale Icon -->
+                        <svg class="icon-size" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0zM12 2a10 10 0 00-9.8 8.1 10.3 10.3 0 000 7.8 10 10 0 0019.6 0 10.3 10.3 0 000-7.8A10 10 0 0012 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary-dark mb-2">1. Avoid Costly Legal Liabilities</h3>
+                    <p class="text-gray-700">Non-compliance can lead to lawsuits under the **Americans with Disabilities Act (ADA)**. Thousands of companies—from small businesses to global brands—have faced legal action for inaccessible websites. Settlements and attorney fees can run into hundreds of thousands of dollars.</p>
+                </div>
+
+                <!-- Point 2: Market Size -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-start border-t-4 border-green-500 hover:shadow-2xl transition duration-300">
+                    <div class="p-3 bg-green-100 text-green-600 rounded-full mb-3">
+                        <!-- Users Icon -->
+                        <svg class="icon-size" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary-dark mb-2">2. Tap Into a 15% Larger Market</h3>
+                    <p class="text-gray-700">Around **15% of the global population** lives with a disability. By ignoring accessibility, you’re excluding a significant segment of your potential customers. WCAG compliance opens your digital doors wider, welcoming every visitor equally.</p>
+                </div>
+
+                <!-- Point 3: SEO -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-start border-t-4 border-blue-500 hover:shadow-2xl transition duration-300">
+                    <div class="p-3 bg-blue-100 text-blue-600 rounded-full mb-3">
+                        <!-- Chart Icon -->
+                        <svg class="icon-size" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary-dark mb-2">3. Boost Your SEO Rankings</h3>
+                    <p class="text-gray-700">Did you know **Google loves accessible websites?** Many WCAG best practices—such as proper use of alt text, structured headings, and descriptive links—also enhance search engine optimization. A compliant website improves crawlability, engagement, and ranking potential.</p>
+                </div>
+
+                <!-- Point 4: Brand Image -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-start border-t-4 border-purple-500 hover:shadow-2xl transition duration-300">
+                    <div class="p-3 bg-purple-100 text-purple-600 rounded-full mb-3">
+                        <!-- Shield Icon -->
+                        <svg class="icon-size" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.192-2.054-.582-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary-dark mb-2">4. Protect and Elevate Your Brand Image</h3>
+                    <p class="text-gray-700">A non-accessible website sends the wrong message: neglect and exclusion. On the other hand, a WCAG-compliant website shows that your brand values inclusivity and innovation. Accessibility isn’t just compliance—it’s **compassion that converts**.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HIDDEN COSTS SECTION -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-extrabold text-primary-dark mb-8 text-center sm:text-left">
+                The Hidden Costs of <span class="text-red-600">Ignoring WCAG Compliance</span>
+            </h2>
+
+            <!-- Table/List Structure for Costs -->
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="grid grid-cols-2 bg-gray-100 font-bold p-4 text-lg border-b border-gray-300">
+                        <div class="text-primary-dark">Risk</div>
+                        <div class="text-primary-dark">Consequence</div>
+                    </div>
+                    <dl>
+                        <div class="grid grid-cols-2 p-4 border-b border-gray-200">
+                            <dt class="font-semibold text-red-700">Legal Action</dt>
+                            <dd class="text-gray-700">ADA lawsuits and fines</dd>
+                        </div>
+                        <div class="grid grid-cols-2 p-4 border-b border-gray-200 bg-gray-50">
+                            <dt class="font-semibold text-red-700">Lost Traffic</dt>
+                            <dd class="text-gray-700">Poor SEO and reduced visibility</dd>
+                        </div>
+                        <div class="grid grid-cols-2 p-4 border-b border-gray-200">
+                            <dt class="font-semibold text-red-700">Missed Revenue</dt>
+                            <dd class="text-gray-700">Excluded users and customers</dd>
+                        </div>
+                        <div class="grid grid-cols-2 p-4 bg-gray-50">
+                            <dt class="font-semibold text-red-700">Brand Damage</dt>
+                            <dd class="text-gray-700">Negative public perception</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <p class="text-center text-lg mt-8 text-gray-700 italic max-w-2xl mx-auto">
+                Accessibility issues can silently erode your business foundation. The question isn’t “Can I afford WCAG compliance?” — it’s “Can I afford not to be compliant?”
+            </p>
+        </section>
+
+        <!-- AUDIT PROCESS SECTION -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-extrabold text-primary-dark mb-10 text-center">
+                What Is a WCAG Compliance Audit & Why You Need One
+            </h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg border-b-4 border-accent-start/50">
+                    <div class="text-3xl font-extrabold text-accent-start mb-2">1.</div>
+                    <h3 class="font-bold text-xl mb-3 text-primary-dark">Identify Gaps</h3>
+                    <p class="text-gray-700 text-sm">A systematic review for issues like color contrast, navigation, and screen reader compatibility.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg border-b-4 border-accent-start/50">
+                    <div class="text-3xl font-extrabold text-accent-start mb-2">2.</div>
+                    <h3 class="font-bold text-xl mb-3 text-primary-dark">Improve UX</h3>
+                    <p class="text-gray-700 text-sm">A compliant website is smoother to navigate, faster to load, and easier to interact with for all users.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg border-b-4 border-accent-start/50">
+                    <div class="text-3xl font-extrabold text-accent-start mb-2">3.</div>
+                    <h3 class="font-bold text-xl mb-3 text-primary-dark">Minimize Risk</h3>
+                    <p class="text-gray-700 text-sm">Proactively fixing issues highlighted in your audit reduces the chance of accessibility lawsuits.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg border-b-4 border-accent-start/50">
+                    <div class="text-3xl font-extrabold text-accent-start mb-2">4.</div>
+                    <h3 class="font-bold text-xl mb-3 text-primary-dark">Strengthen SEO</h3>
+                    <p class="text-gray-700 text-sm">Audit recommendations align with SEO best practices—helping your website rise in search rankings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA AND CLOSING -->
+        <section id="audit-cta" class="mb-16 text-center p-10 sm:p-16 bg-white rounded-3xl shadow-2xl border-2 border-accent-end/30">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-primary-dark mb-4">
+                Take Action Today — <span class="text-accent-end">Before It’s Too Late</span>
+            </h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                You can use free online checkers for a surface-level review, but only a professional WCAG audit provides a detailed, actionable roadmap. **That’s where Kha Creation comes in.**
+            </p>
+
+            <a href="#" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-full shadow-2xl text-white bg-accent-start hover:bg-accent-end transform transition duration-300 hover:scale-[1.03] focus:ring-4 focus:ring-accent-start/50" aria-label="Book Your WCAG Compliance Audit">
+                <!-- Arrow Right Icon -->
+                <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 5l7 7-7 7M5 12h14"></path></svg>
+                Book Your WCAG Compliance Audit with Kha Creation Today
+            </a>
+            <p class="text-sm text-gray-500 mt-6">
+                Let’s build a digital world that everyone can access—with you leading the way.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary-dark text-white mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm">
+            <p>&copy; 2025 Kha Creation. All rights reserved. | <a href="#" class="underline hover:text-accent-start" aria-label="View our Accessibility Statement">Accessibility Statement</a></p>
+        </div>
+    </footer>
+</body>
+</html>
